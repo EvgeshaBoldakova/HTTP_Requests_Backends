@@ -1,0 +1,157 @@
+#usersTable, #productsTable {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 5px 0 50px;
+  table-layout: auto;
+}
+
+th {
+  background-color: #00eaff;
+  height: 70px;
+  font-size: 18px;
+  color: red;
+  padding-left: 0;
+  text-transform: uppercase;
+}
+
+table, th {
+  border: 2px solid black;
+}
+
+th:first-child, td:first-child {
+  width: 50px;
+  text-align: center;
+  padding-left: 0;
+}
+
+td {
+  border: 1px solid black;
+  height: auto;
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+tr:hover {
+  background-color: #b4dd93;
+  color: red;
+}
+
+.colorLabel {
+  padding: 0;
+  width: 50px;
+  height: 25px;
+  border-radius: 3px;
+  margin-left: calc((100% - 50px)/2);
+}
+
+.deleteButton {
+  width: 100px;
+  height: 20px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  background-color: darkred;
+  font-weight: bold;
+}
+
+.addButton {
+  width: 100px;
+  height: 30px;
+  background-color: green;
+  color: white;
+}
+
+.addButton:hover {
+  background-color: #286400;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modalWindow {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 30%;
+  height: auto;
+  background-color: #b4dd93;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+.saveButton {
+  cursor: pointer;
+  margin: 0 20px 0 20px;
+  width: 100px;
+  height: 20px;
+}
+
+.closeButton {
+  cursor: pointer;
+  margin: 0 20px 0 20px;
+  width: 100px;
+  height: 20px;
+}
+
+.inputField {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.inputField label {
+  text-align: right;
+}
+
+.inputField input, .inputField select {
+  flex-grow: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+.editButton {
+  width: 100px;
+  height: 20px;
+  background-color: yellow;
+  color: green;
+  cursor: pointer;
+}
+
+.editButton:hover {
+  background-color: orange;
+  font-weight: bold;
+}
